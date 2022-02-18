@@ -1,0 +1,8 @@
+version: '3'
+services:
+  app:
+    image: books-api
+    container_name: books-api
+    restart: always
+    ports: 
+    - 3000:3000

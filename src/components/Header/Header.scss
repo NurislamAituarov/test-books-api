@@ -1,0 +1,50 @@
+.App-header {
+  background-image: url('../../images/the-7-best-books-to-improve-influencing-skills-2-scaled.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  color: white;
+  h1 {
+    margin: 20px;
+  }
+}
+
+.header__search {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 20px;
+  input {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    background: none;
+  }
+  svg {
+    cursor: pointer;
+  }
+}
+
+.header__select {
+  width: max-content;
+  margin: 20px auto;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .header__search {
+    width: 100%;
+    padding: 10px;
+  }
+  .header__select {
+    display: block;
+    .select {
+      justify-content: space-between;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
