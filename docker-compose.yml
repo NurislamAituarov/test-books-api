@@ -1,8 +1,8 @@
 version: '3'
 services:
   app:
-    image: books-api
-    container_name: books-api
+    image: test-docker
+    container_name: test-docker
     restart: always
     ports: 
     - 3001:3001
