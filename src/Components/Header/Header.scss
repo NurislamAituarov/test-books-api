@@ -1,5 +1,5 @@
 .App-header {
-  background-image: url('../../images/the-7-best-books-to-improve-influencing-skills-2-scaled.jpg');
+  background-image: url('../../Images/the-7-best-books-to-improve-influencing-skills-2-scaled.jpg');
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -17,11 +17,13 @@
   justify-content: center;
   background-color: white;
   padding: 20px;
+  border-radius: 10px;
   input {
     font-size: 20px;
     width: 100%;
     border: none;
     background: none;
+    outline: none;
   }
   svg {
     cursor: pointer;
@@ -29,16 +31,20 @@
 }
 
 .header__select {
-  width: max-content;
+  width: 50%;
   margin: 20px auto;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-@media (max-width: 768px) {
-  .header__search {
-    width: 100%;
-    padding: 10px;
+@media (max-width: 1200px) {
+  .header__select {
+    width: 60%;
   }
+}
+@media (max-width: 1024px) {
   .header__select {
     display: block;
     .select {
@@ -46,5 +52,17 @@
       margin: 0;
       margin-bottom: 20px;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .header__search {
+    width: 100%;
+    padding: 10px;
+  }
+}
+@media (max-width: 568px) {
+  .header__select {
+    width: 100%;
   }
 }

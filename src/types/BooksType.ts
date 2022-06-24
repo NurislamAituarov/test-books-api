@@ -41,3 +41,12 @@ export interface IData {
   kind: string;
   totalItems: number;
 }
+
+export interface BookItemProps {
+  category: string;
+  title: string;
+  date: string;
+  authors: Array<string>;
+  img: string;
+  id: string;
+}

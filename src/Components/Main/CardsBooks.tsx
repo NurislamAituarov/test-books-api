@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+
 import { addItemBooksExisting } from '../../actions/action';
 import { searchBooks } from '../../Api/client';
 import { useAppSelector } from '../../Hooks/Hooks';
-import { StateType } from '../../reducer/reducer';
+import { StateType } from '../../types/ReduxType';
 import { IBooks } from '../../types/BooksType';
 import { Loader } from '../Loader/Loader';
 import { BookItem } from './BookItem';
-import './Main.scss';
 
-export function Main() {
+export function CardsBooks() {
   const { booksData, category, sort, loader, value, arrBooks }: StateType = useAppSelector(
     (state) => state.reducer,
   );
@@ -57,9 +57,8 @@ export function Main() {
   }
 
   const itemsBooks = arrBooks && sortFn(categoryFn(arrBooks));
-
   return (
-    <main className="wrapper">
+    <>
       {booksData && <h2>Found {booksData.totalItems} results</h2>}
       <div className="block__items">
         {itemsBooks &&
@@ -83,6 +82,6 @@ export function Main() {
         </button>
       )}
       {loader && <Loader />}
-    </main>
+    </>
   );
 }

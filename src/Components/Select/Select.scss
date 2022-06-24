@@ -1,0 +1,27 @@
+.select {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+
+  p {
+    margin: 0;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 5px;
+    color: black;
+  }
+}
+#dropdown-button-dark-example1::after {
+  margin-left: 50px;
+}
+
+@media (max-width: 368px) {
+  .select {
+    p {
+      font-size: 16px;
+    }
+  }
+}

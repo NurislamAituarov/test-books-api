@@ -1,8 +1,10 @@
 import { NavLink } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+
 import { useAppSelector } from '../../Hooks/Hooks';
-import { StateType } from '../../reducer/reducer';
+import { StateType } from '../../types/ReduxType';
 import { CLoader } from '../Content-loader/ContentLoader';
+import { Back } from '../Svg/Back';
 import './BookInfo.scss';
 
 export function BookInfo() {
@@ -30,7 +32,9 @@ export function BookInfo() {
             <p className="book__category">{bookItem.volumeInfo.categories}</p>
             <p className="book__title">{bookItem.volumeInfo.title}</p>
             <p>{bookItem.volumeInfo.publishedDate}</p>
-            <p>{bookItem.volumeInfo.authors && bookItem.volumeInfo.authors.join(',  ')}</p>
+            <p className="book__author">
+              {bookItem.volumeInfo.authors && bookItem.volumeInfo.authors.join(',  ')}
+            </p>
             {bookItem.volumeInfo.description && (
               <textarea
                 className="book__description"
@@ -39,7 +43,7 @@ export function BookInfo() {
             )}
 
             <NavLink to="/">
-              <button>back</button>
+              <Back />
             </NavLink>
           </div>
         </>

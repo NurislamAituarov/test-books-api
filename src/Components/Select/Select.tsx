@@ -27,7 +27,7 @@ export function Select({ title, arr }: SelectProps) {
     <div className="select">
       <>
         <p>{title}</p>
-        <Dropdown style={{ width: '200px' }}>
+        <Dropdown>
           <Dropdown.Toggle id="dropdown-button-dark-example1" variant="secondary">
             {selectedCategory}
           </Dropdown.Toggle>
