@@ -1,4 +1,4 @@
-import { IData } from '../types/BooksType';
+import { IData } from '../../types/BooksType';
 
 export const addItemBooks = (item: IData, value: string) => ({
   type: 'ADD_ITEM_BOOKS',

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { addItemBooks, loader } from '../../actions/action';
+import { addItemBooks, loader } from '../../store/actions/action';
 import { searchBooks } from '../../api/client';
 import { Select } from '../Select/Select';
 import { Search } from '../Svg/Search';

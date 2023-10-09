@@ -1,4 +1,4 @@
-import { ActionType, StateType } from '../types/ReduxType';
+import { ActionType, StateType } from '../../types/ReduxType';
 
 const initialState: StateType = {
   booksData: null,

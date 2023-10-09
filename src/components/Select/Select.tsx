@@ -3,7 +3,7 @@ import './Select.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Dropdown } from 'react-bootstrap';
 import { useState } from 'react';
-import { addCategory, addSorting } from '../../actions/action';
+import { addCategory, addSorting } from '../../store/actions/action';
 
 interface SelectProps {
   title: string;
