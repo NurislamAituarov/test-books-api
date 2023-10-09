@@ -8,12 +8,14 @@ import { StateType } from '../../types/ReduxType';
 import { IBooks } from '../../types/BooksType';
 import { Loader } from '../Loader/Loader';
 import { BookItem } from './BookItem';
+import { BtnMore } from '../btn-more/BtnMore';
 
 export function CardsBooks() {
   const { booksData, category, sort, loader, value, arrBooks }: StateType = useAppSelector(
     (state) => state.reducer,
   );
-  const [result, setResult] = useState(8);
+  const [result, setResult] = useState(30);
+  const [isLoading, setIsLoading] = useState(false);
   const dispatch = useDispatch();
 
   function categoryFn(arr: IBooks[]) {
@@ -37,23 +39,12 @@ export function CardsBooks() {
   }
 
   function moreLoad() {
-    setResult((result) => result + 8);
-    if (
-      result === 40 ||
-      result === 80 ||
-      result === 120 ||
-      result === 140 ||
-      result === 180 ||
-      result === 220 ||
-      result === 260 ||
-      result === 300 ||
-      result === 340 ||
-      result === 380
-    ) {
-      searchBooks(value, result).then((result) => {
-        dispatch(addItemBooksExisting(result.data));
-      });
-    }
+    setResult((result) => result + 30);
+    setIsLoading(true);
+    searchBooks(value, result).then((result) => {
+      dispatch(addItemBooksExisting(result.data));
+      setIsLoading(false);
+    });
   }
 
   const itemsBooks = arrBooks && sortFn(categoryFn(arrBooks));
@@ -77,9 +68,7 @@ export function CardsBooks() {
           })}
       </div>
       {booksData && result < booksData.totalItems && (
-        <button className="btn__more" onClick={moreLoad}>
-          Load more
-        </button>
+        <BtnMore moreLoad={moreLoad} isLoading={isLoading} />
       )}
       {loader && <Loader />}
     </>
