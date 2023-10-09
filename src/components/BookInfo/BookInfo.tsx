@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
 
-import { useAppSelector } from '../../Hooks/Hooks';
+import { useAppSelector } from '../../hooks/Hooks';
 import { StateType } from '../../types/ReduxType';
 import { CLoader } from '../Content-loader/ContentLoader';
 import { Back } from '../Svg/Back';

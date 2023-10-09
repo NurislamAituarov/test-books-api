@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { addItemBooks, loader } from '../../actions/action';
-import { searchBooks } from '../../Api/client';
+import { searchBooks } from '../../api/client';
 import { Select } from '../Select/Select';
 import { Search } from '../Svg/Search';
 import './Header.scss';

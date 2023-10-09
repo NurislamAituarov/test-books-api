@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { addItemBooksExisting } from '../../actions/action';
-import { searchBooks } from '../../Api/client';
-import { useAppSelector } from '../../Hooks/Hooks';
+import { searchBooks } from '../../api/client';
+import { useAppSelector } from '../../hooks/Hooks';
 import { StateType } from '../../types/ReduxType';
 import { IBooks } from '../../types/BooksType';
 import { Loader } from '../Loader/Loader';

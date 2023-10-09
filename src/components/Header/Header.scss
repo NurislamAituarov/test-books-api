@@ -1,5 +1,5 @@
 .App-header {
-  background-image: url('../../Images/the-7-best-books-to-improve-influencing-skills-2-scaled.jpg');
+  background-image: url('../../images/the-7-best-books-to-improve-influencing-skills-2-scaled.jpg');
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -35,8 +35,8 @@
   margin: 20px auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+  justify-content: center;
+  gap: 30px;
 }
 
 @media (max-width: 1200px) {
@@ -48,7 +48,7 @@
   .header__select {
     display: block;
     .select {
-      justify-content: space-between;
+      justify-content: center;
       margin: 0;
       margin-bottom: 20px;
     }
@@ -60,9 +60,18 @@
     width: 100%;
     padding: 10px;
   }
+
+  .header__select {
+    .select {
+      margin-bottom: 10px;
+    }
+  }
 }
 @media (max-width: 568px) {
   .header__select {
     width: 100%;
+    .select {
+      justify-content: space-between;
+    }
   }
 }
