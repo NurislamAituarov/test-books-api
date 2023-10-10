@@ -31,7 +31,7 @@ export function Header() {
           console.error('error');
           setTimeout(() => {
             alert('Произошла ошибка, не можем найти совпадения... ');
-            window.location.href = 'http://localhost:3000/';
+            window.location.reload();
           }, 1000);
         } else {
           dispatch(addItemBooks(data.data, value));

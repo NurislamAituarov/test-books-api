@@ -38,6 +38,7 @@
 
   svg {
     margin-bottom: 50px;
+    border-radius: 4px;
   }
 
   &:hover,
@@ -64,19 +65,6 @@
     text-align: start;
   }
 }
-
-// .btn__more {
-//   margin-top: 30px;
-//   padding: 15px 30px;
-//   border: none;
-//   border-radius: 5px;
-//   transition: all 0.3s;
-//   &:hover,
-//   &:active,
-//   &:focus {
-//     background-color: rgb(182, 182, 182);
-//   }
-// }
 
 @media (max-width: 1100px) {
   .block__items {

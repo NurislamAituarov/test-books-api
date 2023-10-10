@@ -17,7 +17,11 @@ class ErrorBoundary extends Component {
 
   render() {
     if (this.state.error) {
-      return <h2>Произошла ошибка. Перезагрузите страницу либо вернитесь назад</h2>;
+      return (
+        <h2 style={{ margin: '20px 0' }}>
+          Произошла ошибка. Перезагрузите страницу либо вернитесь назад
+        </h2>
+      );
     }
     return this.props.children;
   }
