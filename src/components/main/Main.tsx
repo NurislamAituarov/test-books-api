@@ -1,6 +1,6 @@
 import './Main.scss';
 import { Route, Routes } from 'react-router-dom';
-import { BookInfo } from '../BookInfo/BookInfo';
+import { BookInfo } from '../book-Info/BookInfo';
 import { CardsBooks } from './CardsBooks';
 
 export function Main() {

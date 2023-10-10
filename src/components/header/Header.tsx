@@ -3,8 +3,8 @@ import { useDispatch } from 'react-redux';
 
 import { addItemBooks, loader } from '../../store/actions/action';
 import { searchBooks } from '../../api/client';
-import { Select } from '../Select/Select';
-import { Search } from '../Svg/Search';
+import { Select } from '../select/Select';
+import { Search } from '../svg/Search';
 import './Header.scss';
 
 const itemCategories = [

@@ -6,7 +6,7 @@ import { searchBooks } from '../../api/client';
 import { useAppSelector } from '../../hooks/hooks';
 import { StateType } from '../../types/ReduxType';
 import { IBooks } from '../../types/BooksType';
-import { Loader } from '../Loader/Loader';
+import { Loader } from '../loader/Loader';
 import { BookItem } from './BookItem';
 import { BtnMore } from '../btn-more/BtnMore';
 

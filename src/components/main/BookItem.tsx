@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-import { CLoader } from '../Content-loader/ContentLoader';
+import { CLoader } from '../content-loader/ContentLoader';
 import { BookItemProps } from '../../types/BooksType';
 
 export const BookItem = ({ category, title, date, authors, img, id }: BookItemProps) => {

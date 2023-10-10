@@ -1,6 +1,6 @@
-import { ErrorBoundary } from '../ErrprBoundary/ErrorBoundary';
-import { Header } from '../Header/Header';
-import { Main } from '../Main/Main';
+import { ErrorBoundary } from '../errpr-boundary/ErrorBoundary';
+import { Header } from '../header/Header';
+import { Main } from '../main/Main';
 import './App.scss';
 
 function App() {

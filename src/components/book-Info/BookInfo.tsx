@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 
 import { useAppSelector } from '../../hooks/hooks';
 import { StateType } from '../../types/ReduxType';
-import { CLoader } from '../Content-loader/ContentLoader';
-import { Back } from '../Svg/Back';
+import { CLoader } from '../content-loader/ContentLoader';
+import { Back } from '../svg/Back';
 import './BookInfo.scss';
 
 export function BookInfo() {
