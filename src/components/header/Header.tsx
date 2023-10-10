@@ -7,6 +7,7 @@ import { Select } from '../select/Select';
 import { Search } from '../svg/Search';
 import './Header.scss';
 import { useNavigate } from 'react-router-dom';
+import { BASE_URL } from '../../lib/helper';
 
 const itemCategories = [
   'All',
@@ -28,9 +29,7 @@ export function Header() {
   function onSearch(e: any) {
     e.preventDefault();
 
-    const url = process.env.NODE_ENV === 'development' ? '/' : '/test-books-api/';
-
-    navigate(url);
+    navigate(BASE_URL);
 
     if (value) {
       dispatch(loader());
