@@ -6,6 +6,7 @@ import { StateType } from '../../types/ReduxType';
 import { CLoader } from '../content-loader/ContentLoader';
 import { Back } from '../svg/Back';
 import './BookInfo.scss';
+import { BASE_URL } from '../../lib/helper';
 
 export function BookInfo() {
   const { booksData }: StateType = useAppSelector((state) => state.reducer);
@@ -42,7 +43,7 @@ export function BookInfo() {
               />
             )}
 
-            <NavLink to="/">
+            <NavLink to={BASE_URL}>
               <Back />
             </NavLink>
           </div>
