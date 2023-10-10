@@ -9,7 +9,7 @@ export function Main() {
     <main className="wrapper">
       <Routes>
         <Route path={BASE_URL} element={<CardsBooks />}></Route>
-        <Route path={`${BASE_URL}/bookInfo/:bookId`} element={<BookInfo />} />
+        <Route path="/bookInfo/:bookId" element={<BookInfo />} />
       </Routes>
     </main>
   );
