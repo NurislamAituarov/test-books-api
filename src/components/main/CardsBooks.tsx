@@ -53,7 +53,7 @@ export function CardsBooks() {
       {booksData && <h2>Found {booksData.totalItems} results</h2>}
       <div className="block__items">
         {itemsBooks &&
-          itemsBooks.slice(0, result).map((book: any, i: number) => {
+          itemsBooks.slice(0, result).map((book, i: number) => {
             return (
               <BookItem
                 key={i}

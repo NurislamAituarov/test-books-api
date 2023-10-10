@@ -6,7 +6,7 @@ interface Object {
 interface IVolumeInfo {
   title: string;
   subtitle: string;
-  authors: String[];
+  authors: string[];
   publishedDate: string;
   industryIdentifiers: string;
   readingModes: object;
@@ -46,7 +46,7 @@ export interface BookItemProps {
   category: string;
   title: string;
   date: string;
-  authors: Array<string>;
+  authors: string[];
   img: string;
   id: string;
 }
