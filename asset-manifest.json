@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/test-books-api/static/css/main.dab4e2e0.css",
-    "main.js": "/test-books-api/static/js/main.e7b451f4.js",
+    "main.js": "/test-books-api/static/js/main.bc98cafd.js",
     "static/media/the-7-best-books-to-improve-influencing-skills-2-scaled.jpg": "/test-books-api/static/media/the-7-best-books-to-improve-influencing-skills-2-scaled.055f7f684a8c1e97520e.jpg",
     "index.html": "/test-books-api/index.html",
     "main.dab4e2e0.css.map": "/test-books-api/static/css/main.dab4e2e0.css.map",
-    "main.e7b451f4.js.map": "/test-books-api/static/js/main.e7b451f4.js.map"
+    "main.bc98cafd.js.map": "/test-books-api/static/js/main.bc98cafd.js.map"
   },
   "entrypoints": [
     "static/css/main.dab4e2e0.css",
-    "static/js/main.e7b451f4.js"
+    "static/js/main.bc98cafd.js"
   ]
 }
