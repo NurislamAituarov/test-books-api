@@ -5,8 +5,10 @@ interface SearchProps {
 }
 
 export function Search({ onSearch }: SearchProps) {
+  const url = process.env.NODE_ENV === 'development' ? '/' : '/test-books-api/';
+
   return (
-    <NavLink to="/">
+    <NavLink to={url}>
       <svg
         onClick={onSearch}
         width="26"
