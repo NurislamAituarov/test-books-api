@@ -2,6 +2,7 @@
   "name": "books-api",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nurislamaituarov.github.io/test-books-api/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
@@ -28,7 +29,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +54,7 @@
     "@types/node-sass": "^4.11.2",
     "@types/react-lazy-load-image-component": "^1.5.2",
     "axios": "^0.26.0",
+    "gh-pages": "^6.0.0",
     "sass": "^1.49.7",
     "typed-scss-modules": "^5.1.1"
   }
